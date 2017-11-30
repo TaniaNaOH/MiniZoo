@@ -1,0 +1,38 @@
+body {
+  background-color: white;
+  font-family:bolder;
+  color: blue;
+  font-size: 35;
+  text-align: center;
+}
+
+.animal {
+  float: right;
+  height: 200px;
+  margin: 4% 7%;
+  width: 18%;
+  }
+
+.negative-colors {
+    filter: invert(.8);
+    -ms-filter: invert(.8);
+    -moz-filter:invert(.8);
+    -o-filter:invert(.8);
+    -webkit-filter: invert(.8);
+  }
+
+.sepia {
+    filter: invert(1);
+    -ms-filter: invert(1);
+    -moz-filter:invert(1);
+    -o-filter:invert(1);
+    -webkit-filter: invert(1);
+  }
+
+.white-black {
+    filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -moz-filter:grayscale(100%);
+    -o-filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+  }
