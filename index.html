@@ -8,20 +8,21 @@
   <body>
     <h1> MiniZoo </h1>
      <main>
-       <select id="select" title="opciones de filtros">
-       <option value="" hidden>Selecciona una opcion</option>
-        <option value="original">Original</option>
-        <option value="sepia">Sepia</option>
-        <option value="white-black">Blanco y negro</option>
-        <option value="negative-colors">Invertir colores</option>
-           </main>
+       <select id="menu" title="opciones de filtros">
+       <option data-filtro="original" value='original'selected>Original</option>
+       <option data-filtro="sepia" value='sepia'>Sepia</option>
+       <option data-filtro="white-black" value='white-black'>Blanco y negro</option>
+       <option data-filtro="negative-colors" value='negativeColors'>Invertir colores</option>
+         </main>
         </select>
-      <img src="./css/assets/images/minizoo1.jpg" alt="Mort" class="animal">
-      <img src="./css/assets/images/minizoo2.jpg" alt="Leon" class="animal">
-      <img src="./css/assets/images/minizoo3.jpg" alt="Julen" class="animal">
-      <img src="./css/assets/images/minizoo4.jpg" alt="Cabo" class="animal">
-      <img src="./css/assets/images/minizoo5.jpg" alt="NaOH" class="animal">
-      <img src="./css/assets/images/minizoo6.jpg" alt="Melman" class="animal">
+      <div class="contenedor-imagenes">
+      <img src="./css/assets/images/mort640.jpg" width="350" height="350" alt="Mort" class="animal">
+      <img src="./css/assets/images/alex640.jpg" width="350" height="350" alt="Leon" class="animal">
+      <img src="./css/assets/images/julen640.jpg" width="350" height="350" alt="Julen" class="animal">
+      <img src="./css/assets/images/minizoo4.jpg" width="350" height="350" alt="Cabo" class="animal">
+      <img src="./css/assets/images/NaOH640.jpg" width="350" height="350" alt="NaOH" class="animal">
+      <img src="./css/assets/images/melman640.jpg" width="350" height="350" alt="Melman" class="animal">
+    </div>
      <script type="text/javascript" src="js/app.js">
     </script>
    </body>

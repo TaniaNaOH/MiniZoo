@@ -1,63 +1,47 @@
-/*console.log("memorama");
-var cards = document.getElementsByClassName("card");
-console.log(cards);
-for (var i = 0;i < cards.length; i++){
-var item= cards[i];
-  //console.log (cards[i]);
-item.classList.add("efects")
-item.addEventListener("mouseover",rotation);
+
+document.getElementById("menu").addEventListener("change", filtros);
+function filtros(event){
+
+  var selectedIndex = event.target.selectedIndex;
+  var filtroAplicar = event.target[selectedIndex].dataset.filtro;
+  if (filtroAplicar == "white-black"){
+  cambiarAWhiteBlack();
+
+} else if (filtroAplicar == "sepia") {
+    cambiarAsepia();
+
+} else if (filtroAplicar == "original") {
+     original();
+
+} else if (filtroAplicar == "negative-colors") {
+  cambiarANegative();
+}
 }
 
-function rotation () {
-  if (this.classList.contains("sepia")){
-  else {
-    this.classList.add("rotation-efect");
-  }
-}
-*/
-console.log ("Minizoo");
-
-var images = document.getElementsByClassName("animal");
-var select = document.getElementById("select");
-select.onchange = function(){
-  if (select.value=="original"){
-    for (var i =0; i <image.length; i++); {
-      var item= animal[i];
-      item.classList.add("original");
-      item.addEventListener("select");
-      images[i].classList.remove("white-black");
-      images[i].classList.remove("negative-colors");
-      images[i].classList.remove("sepia");
-    }
+function cambiarAWhiteBlack() {
+  var imagenesACambiar = document.getElementsByTagName("img");
+  for (var i = 0; i < imagenesACambiar.length; i++) {
+    imagenesACambiar[i].className = "white-black";
   }
 }
 
-var images = document.getElementsByClassName("animal");
-var select = document.getElementById("select");
-select.onchange = function(){
-  if (select.value=="sepia"){
-    for (var i =0; i <image.length; i++); {
-      var item= animal[i];
-      item.classList.add("sepia");
-      item.addEventListener("select");
-      images[i].classList.remove("white-black");
-      images[i].classList.remove("negative-colors");
-      images[i].classList.remove("original");
-    }
+function cambiarAsepia() {
+  var imagenesACambiar = document.getElementsByTagName("img");
+  for (var i = 0; i < imagenesACambiar.length; i++) {
+    imagenesACambiar[i].className = "sepia";
   }
 }
 
-var images = document.getElementsByClassName("animal");
-var select = document.getElementById("select");
-select.onchange = function(){
-  if (select.value=="negative-colors"){
-    for (var i =0; i <image.length; i++) {
-      var item= animal[i];
-      item.classList.add("negative-colors");
-      item.addEventListener("select");
-      images[i].classList.remove("white-black");
-      images[i].classList.remove("sepia");
-      images[i].classList.remove("original");
-    }
+function cambiarANegative() {
+  var imagenesACambiar = document.getElementsByTagName("img");
+  for (var i = 0; i < imagenesACambiar.length; i++) {
+    imagenesACambiar[i].className = "negative-colors";
+  }
+}
+
+function original() {
+  var imagenesACambiar = document.getElementsByTagName("img");
+  for (var i = 0; i < imagenesACambiar.length; i++) {
+    imagenesACambiar[i].className = "original";
   }
 }

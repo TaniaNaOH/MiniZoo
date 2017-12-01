@@ -4,35 +4,31 @@ body {
   color: blue;
   font-size: 35;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.animal {
-  float: right;
-  height: 200px;
-  margin: 4% 7%;
-  width: 18%;
-  }
+select:hover {
+  background-color: blue;
+  color: White;
+}
 
 .negative-colors {
-    filter: invert(.8);
-    -ms-filter: invert(.8);
-    -moz-filter:invert(.8);
-    -o-filter:invert(.8);
-    -webkit-filter: invert(.8);
+  -webkit-filter: invert(100%);
+   filter: invert(100%);
   }
 
 .sepia {
-    filter: invert(1);
-    -ms-filter: invert(1);
-    -moz-filter:invert(1);
-    -o-filter:invert(1);
-    -webkit-filter: invert(1);
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
   }
 
 .white-black {
-    filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -moz-filter:grayscale(100%);
-    -o-filter:grayscale(100%);
-    -webkit-filter:grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   }
+
+
+.original {
+  -webkit-filter: (100%);
+  filter: (100%);
+}
